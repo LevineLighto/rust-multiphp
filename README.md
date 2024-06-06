@@ -21,13 +21,13 @@ I chose the second option. I created 2 .bat files, one for running PHP 7.4 and t
 for running composer using PHP 7.4
 
 PHP 7.4
-```batch
+```bat
 @echo off
 C:\xampp\php74\php.exe %*
 ```
 
 Composer running on PHP 7.4
-```batch
+```bat
 @echo off
 php74 C:\ProgramData\ComposerSetup\bin\composer.phar %*
 ```
@@ -46,3 +46,12 @@ And viola! A new Rust project to handle those alias.
 
 Or so I thought. But now that I think of it, creating this project requires more effort
 than duplicating those .bat files (l|l⚆ᗝ⚆)
+
+## Usage
+```bash
+# Syntax:
+multiphp {version} {whatever-you-want-to-do}
+
+# Example (Creating a new Laravel model plus its migration):
+multiphp 74 artisan make:model -m Wallet
+```
