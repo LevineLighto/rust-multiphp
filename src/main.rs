@@ -1,8 +1,6 @@
 use std::{env, process::{exit, Command}};
 
 fn main() {
-    env::set_var("RUST_BACKTRACE", "full");
-
     let version = env::args().nth(1).expect("PHP version is not selected");
 
     let available_versions = [String::from("74"), String::from("81"), String::from("82"), String::from("83")];
