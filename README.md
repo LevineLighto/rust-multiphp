@@ -32,17 +32,17 @@ Composer running on PHP 7.4
 php74 C:\ProgramData\ComposerSetup\bin\composer.phar %*
 ```
 
-There weren't much problem, until few months later, I need to install PHP 8.2 and PHP 8.3.
-And guess what? Yep! I need to make another .bat files. 4 files to be precise.
+There weren't much problem, until few months later, I had to install PHP 8.2 and PHP 8.3.
+And guess what? Yep! I needed to make another .bat files. 4 files to be precise.
 1. Alias for PHP 8.2
 2. Alias for Composer using PHP 8.2
 3. Alias for PHP 8.3
 4. Alias for Composer using PHP 8.3
 
-For the lazy me, it's too much hassle to duplicate some (two) .bat files. And here I go,
-a new Rust project to handle those alias.
+For the lazy me, it was too much hassle to duplicate some (two) .bat files. 
+And viola! A new Rust project to handle those alias.
 
 > A new learning opportunity
 
 Or so I thought. But now that I think of it, creating this project requires more effort
-than duplicating those .bat files ( l|l⚆ᗝ⚆)
+than duplicating those .bat files (l|l⚆ᗝ⚆)
