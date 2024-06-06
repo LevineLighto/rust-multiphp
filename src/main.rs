@@ -30,7 +30,7 @@ fn main() {
     let mut process = Command::new(command)
         .args(args)
         .spawn()
-        .expect("Failed to execute command");
+        .expect("Multi PHP: Failed to execute command");
 
     let status = process.wait().unwrap();
     println!("Exited with {status}")
